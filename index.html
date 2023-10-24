@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <link rel="icon"
+        href="https://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/32/Letter-N-icon.png"
+        width="32"
+        height="32">
+  <link rel="stylesheet"
+        href="./src/styles/index.scss">
+  <title>News API</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="/"
+       class="header-logo">News
+    </a>
+    <nav class="header_nav">
+      <ul class="header_list">
+        <li class="header_list-item">
+          <a href="#">
+            Home
+          </a>
+        </li>
+        <li class="header_list-item">
+          <a href="#">
+            Favorite
+          </a>
+        </li>
+        <li class="header_list-item">
+          <a href="#">
+            Read
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div action=""
+         class="header_form"
+         autocomplete="off">
+      <button type="button"
+              class="header_form__button-show">
+        <img src="./src/images/bx_search.svg"
+             alt="search__icon"
+             class="search__icon-show"
+             width="20"
+             height="20">
+      </button>
+      <input type="text"
+             name="query"
+             class="header_form__input-close"
+             placeholder="Search" />
+      <!-- <button type="submit"
+              class="header_form__button-hidden">
+        <img src="./src/images/bx_search.svg"
+             alt="search__icon"
+             class="search__icon-hidden"
+             width="20"
+             height="20">
+      </button> -->
+
+    </div>
+    <div class="header_toggle">
+      <img src="./src/images/icons.svg#sun"
+           alt="search__icon"
+           class="search__icon-hidden"
+           width="21"
+           height="21">
+
+      <p class="text-switch light">Light</p>
+      <span>
+        <label class="switch">
+          <input id="theme-switch"
+                 type="checkbox"
+                 class="input-switch" />
+          <span class="slider round"></span>
+        </label>
+      </span>
+      <svg width="21"
+           height="21"
+           class="switch-icon dark">
+        <use href="./src/images/icons.svg#moon"></use>
+      </svg>
+      <p class="text-switch dark">Dark</p>
+    </div>
+    <button class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+      <svg width="24"
+           height="24"
+           class="menu-icon">
+        <use href="./src/images/icons.svg#menu"></use>
+      </svg>
+    </button>
+    </div>
+  </header>
+  <main>
+    <nav class="main_nav">
+      <ul class="main_nav-list">
+        <li class="main_nav-list-item">
+          <button class="button">Admin</button>
+        </li>
+        <li class="main_nav-list-item">
+          <button class="button">Arts</button>
+        </li>
+        <li class="main_nav-list-item">
+          <button class="button">Automobiles</button>
+        </li>
+        <li class="main_nav-list-item">
+          <button class="button">Books</button>
+        </li>
+        <li class="main_nav-list-item">
+          <button class="button">Briefing</button>
+        </li>
+        <li class="main_nav-list-item">
+          <button class="button">Business</button>
+        </li>
+        <li class="main_nav-list-item">
+          <button class="button">Others</button>
+        </li>
+      </ul>
+      <p class="main_nav-text">Search date news</p>
+      <div class="main_nav-date"></div>
+    </nav>
+    <div class="block_news">
+
+    </div>
+
+  </main>
+
+  <div id="app"></div>
+  <script type="module"
+          src="/src/js/main.js"></script>
+</body>
+
+</html>

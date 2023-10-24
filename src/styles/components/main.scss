@@ -1,0 +1,26 @@
+.main_nav {
+    display: flex;
+    align-items: center;
+    padding: 28px 52px 60px 16px;
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        &-item {
+            .button {
+                padding: 7.5px 24.5px;
+                border-radius: 20px;
+                border: 1px solid $grey-color;
+            }
+        }
+    }
+    &-text {
+        margin-left: 111px;
+    }
+    &-date {
+        margin-left: auto;
+        @include size(168px, 31px);
+        border-radius: 20px;
+        border: 1px solid $grey-color;
+    }
+}

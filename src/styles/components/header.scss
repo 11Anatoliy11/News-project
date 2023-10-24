@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 28px 16px;
+    border-bottom: 1px solid $grey-color;
+    &-logo {
+        @include font(700, 42px, normal);
+        @media screen and (max-width: $tablet) {
+            @include font(700, 32px, normal);
+        }
+        @media screen and (max-width: $mobile) {
+            @include font(700, 24px, normal);
+        }
+    }
+    &_nav {
+        margin-left: 102px;
+        @media screen and (max-width: $tablet) {
+            margin-left: 48px;
+        }
+        .header_list {
+            display: flex;
+            gap: 69px;
+            @include font(700, 18px, normal);
+            @media screen and (max-width: $tablet) {
+                @include font(700, 16px, normal);
+                margin-left: 48px;
+                gap: 44px;
+            }
+        }
+    }
+    &_form {
+        display: flex;
+        margin-left: auto;
+        cursor: pointer;
+        @include size(288px, 31px);
+        padding: 5px 12px;
+        border-radius: 20px;
+        border: 1px solid #111321;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        @media screen and (max-width: $tablet) {
+            margin-left: 32px;
+            width: 213px;
+        }
+        @media screen and (max-width: $mobile) {
+            margin-left: 32px;
+            @include size(231px);
+        }
+        &__input-close {
+            cursor: pointer;
+            width: 100%;
+            margin-left: 16px;
+            border: none;
+            outline: none;
+        }
+    }
+    &_toggle {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        color: $favorite-color;
+    }
+}
+
+.search__icon-hidden {
+    display: none;
+}
+
+.search__icon-show {
+    // position: relative;
+    // left: -204px;
+}
